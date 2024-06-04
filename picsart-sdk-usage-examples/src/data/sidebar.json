@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Remove Background",
+    "childrens": [
+      {
+        "title": "Remove & Change Background"
+      },
+      {
+        "title": "Remove background and get sticker"
+      },
+      {
+        "title": "Change Background with lovely prints"
+      },
+      {
+        "title": "Change Background with color"
+      }
+    ]
+  },
+  {
+    "title": "Photo enhancement",
+    "childrens": [
+      {
+        "title": "Upscale"
+      },
+      {
+        "title": "Upscale Ultra"
+      },
+      {
+        "title": "Get upscale ultra by transaction_id"
+      },
+      {
+        "title": "Ultra Enhance"
+      },
+      {
+        "title": "Face Enhancement"
+      }
+    ]
+  },
+  {
+    "title": "Effects",
+    "childrens": [
+      {
+        "title": "Effects"
+      },
+      {
+        "title": "/effects"
+      },
+      {
+        "title": "Effect Previews"
+      },
+      {
+        "title": "/masks"
+      },
+      {
+        "title": "/masks/previews"
+      }
+    ]
+  },
+  {
+    "title": "Adjust",
+    "childrens": [
+      {
+        "title": "Adjust"
+      },
+      {
+        "title": "History"
+      }
+    ]
+  },
+  {
+    "title": "Content Generation",
+    "childrens": [
+      {
+        "title": "Texture Generator"
+      }
+    ]
+  },
+  {
+    "title": "Utilities",
+    "childrens": [
+      {
+        "title": "Balance"
+      },
+      {
+        "title": "/upload"
+      }
+    ]
+  },
+  {
+    "title": "AI tools",
+    "childrens": [
+      {
+        "title": "Surfacemap"
+      }
+    ]
+  },
+  {
+    "title": "Text2Image",
+    "childrens": [
+      {
+        "title": "Text2Image"
+      },
+      {
+        "title": "Text2Image"
+      }
+    ]
+
+  }
+]

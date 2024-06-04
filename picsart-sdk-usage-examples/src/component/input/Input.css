@@ -1,0 +1,43 @@
+.form-input {
+  width: 70%;
+  margin: 5px;
+  position: relative;
+}
+  
+.form-input input::placeholder {
+  opacity: 0;
+}
+
+.form-input input {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 5px;
+  outline: none;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* .form-input label {
+  position: absolute;
+  left: 10px;
+  top: 5%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: gray;
+  letter-spacing: 1px;
+  transition: 0.3s;
+} */
+
+/* .form-input input:focus + label,
+.form-input input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 0.8rem;
+  color: indigo;
+  background: #fff;
+  padding: 7px;
+} */
+
+/* .form-input input:focus {
+  border: 2px solid indigo;
+} */
