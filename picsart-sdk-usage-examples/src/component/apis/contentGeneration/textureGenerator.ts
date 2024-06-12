@@ -4,11 +4,21 @@ export const textureGenerator =  async (item: any): Promise<object> => {
   console.log(item.image)
 
   const imageApi = PicsartForDevelopers.getImageApi(item.XPicsartAPIKey);
-  const result = await imageApi.backgroundTexture(
-    new BackgroundTextureRequest().setImage(
-      ImageApi.newImageBinary(item.image)
-    ).setHeight(1024)
-  );
+  let result;
 
+  if(item.imageUrl){
+    result = await imageApi.backgroundTexture(
+    new BackgroundTextureRequest().setImage(
+      ImageApi.newImageUrl(item.imageUrl)
+    ).setHeight(1024)
+    );
+  } else {
+    result = await imageApi.backgroundTexture(
+      new BackgroundTextureRequest().setImage(
+        ImageApi.newImageBinary(item.image)
+      ).setHeight(1024)
+    );
+  }
+  
   return result.image;
 }

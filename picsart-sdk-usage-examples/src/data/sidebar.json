@@ -4,15 +4,6 @@
     "childrens": [
       {
         "title": "Remove & Change Background"
-      },
-      {
-        "title": "Remove background and get sticker"
-      },
-      {
-        "title": "Change Background with lovely prints"
-      },
-      {
-        "title": "Change Background with color"
       }
     ]
   },
@@ -47,12 +38,6 @@
       },
       {
         "title": "Effect Previews"
-      },
-      {
-        "title": "/masks"
-      },
-      {
-        "title": "/masks/previews"
       }
     ]
   },
@@ -61,9 +46,6 @@
     "childrens": [
       {
         "title": "Adjust"
-      },
-      {
-        "title": "History"
       }
     ]
   },

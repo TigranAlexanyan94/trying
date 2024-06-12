@@ -1,15 +1,6 @@
 import { useState } from "react";
 
 import { removeChangeBackground } from "../apis/removeBackground/removeChangeBackground";
-import { removeBackgroundAndGetSticker } from "../apis/removeBackground/removeBackgroundAndGetSticker";
-
-import {
-  changeBackgroundWithColor } from "../apis/removeBackground/changeBackgroundWithColor";
-
-import {
-  changeBackgroundWithLovelyPrints
-} from "../apis/removeBackground/changeBackgroundWithLovelyPrints";
-
 
 import { upscale } from "../apis/photoEnhancement/upscale";
 import { upscaleUltra } from "../apis/photoEnhancement/upscaleUtra";
@@ -20,8 +11,6 @@ import { faceEnhancement } from "../apis/photoEnhancement/faceEnhance";
 import { getEffects } from "../apis/effects/effects";
 import { postEffects } from "../apis/effects/postEffects";
 import { effectPreviews } from "../apis/effects/effectsPreviews";
-import { masks } from "../apis/effects/masks";
-import { masksPreviews } from "../apis/effects/masksPreviews";
 
 import { adjust } from "../apis/adjust/adjust";
 import { textureGenerator } from "../apis/contentGeneration/textureGenerator";
@@ -43,9 +32,6 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   { title:'Remove & Change Background', handler: removeChangeBackground },
-  { title:'Remove background and get sticker', handler: removeBackgroundAndGetSticker },
-  { title:'Change Background with lovely prints', handler: changeBackgroundWithLovelyPrints },
-  { title:'Change Background with color', handler: changeBackgroundWithColor },
 
   { title:'Upscale', handler: upscale },
   { title:'Upscale Ultra', handler: upscaleUltra },
@@ -56,8 +42,6 @@ const menuItems: MenuItem[] = [
   { title:'Effects', handler: getEffects },
   { title:'/effects', handler: postEffects },
   { title:'Effect Previews', handler: effectPreviews },
-  { title:'/masks', handler: masks },
-  { title:'"/masks/previews', handler: masksPreviews },
 
   { title:'Adjust', handler: adjust },
   { title:'Texture Generator', handler: textureGenerator },
