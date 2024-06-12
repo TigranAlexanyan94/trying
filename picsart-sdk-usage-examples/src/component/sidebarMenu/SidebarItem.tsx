@@ -69,10 +69,6 @@ const menuItems: MenuItem[] = [
   { title:'Text2Image', handler: text2Image },
 ]
 
-// 1.finlize menu items 
-// 2. convert to typescript
-// 3.define type for handler parameter
-
 export interface Item {
   title: string;
   childrens: object[];
@@ -80,8 +76,11 @@ export interface Item {
 
 export interface SidebarItemProps {
   item: Item;
-  // handlerResponseData: void;
+  handlerResponseData: (data: any) => void;
   handleSetLoading: (load: boolean) => void;
+  image: string;
+  XPicsartAPIKey: string;
+  imageUrl: string;
 }
 
 
@@ -93,18 +92,12 @@ const SidebarItem = (props: SidebarItemProps): any => {
       if(elem.title === item.title){
          props.handleSetLoading(true);
         try {
-          const data = await elem.handler({})
+          const data = await elem.handler(props)
           props.handleSetLoading(false);
-          return data;
-          // .then((data: object) => {
-          // console.log(data);
-          // handlerResponseData(data);
-         
-        // })
+          props.handlerResponseData(data);
         } catch (err: any) {
           console.log(err)
         }
-       
       }
     })
   };
@@ -122,9 +115,6 @@ const SidebarItem = (props: SidebarItemProps): any => {
 
         <div className="sidebar-content">
           {props.item.childrens.map((item: any, index: number) =>
-            // <SidebarItem key={index} item={item.title}
-            // handlerResponseData={handlerResponseData}
-            // handleSetLoading={handleSetLoading} />
             <span className="sidebar-item plain" key={index} onClick={() => handleOptionalAction(item)}>
               <p>{item.title}</p>
             </span>)

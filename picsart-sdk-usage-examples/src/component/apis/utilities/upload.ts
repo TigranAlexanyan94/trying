@@ -1,4 +1,15 @@
-export const upload =  async (item: any): Promise<object> => {
-  console.log(item.title)
-  return Promise.resolve(item)
+import PicsartForDevelopers, { ImageApi, UploadRequest } from 'picsart-sdk';
+
+export const upload =  async (item: any): Promise<any> => {
+  console.log(item.image)
+  // return Promise.resolve(item)
+
+  const imageApi = PicsartForDevelopers.getImageApi(item.XPicsartAPIKey);
+  const result = await imageApi.upload(
+    new UploadRequest().setImage(
+      ImageApi.newImageBinary(item.image)
+    )
+  );
+
+  return result.image;
 }

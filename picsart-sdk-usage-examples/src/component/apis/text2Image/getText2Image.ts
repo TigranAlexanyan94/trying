@@ -1,5 +1,4 @@
-export const getText2Image =  async (item: any): Promise<object> => {
-  console.log(item.title)
-  return Promise.resolve(item)
-
+export const getText2Image =  async (item: any): Promise<any> => {
+  console.log(item.image)
+  // return Promise.resolve(item)
 }

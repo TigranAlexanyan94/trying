@@ -1,11 +1,11 @@
 .form-input {
-  width: 70%;
+  width: 98%;
   margin: 5px;
   position: relative;
 }
   
 .form-input input::placeholder {
-  opacity: 0;
+  color: gray;
 }
 
 .form-input input {
@@ -17,27 +17,3 @@
   box-sizing: border-box;
   border-radius: 5px;
 }
-
-/* .form-input label {
-  position: absolute;
-  left: 10px;
-  top: 5%;
-  transform: translateY(-50%);
-  font-size: 0.8rem;
-  color: gray;
-  letter-spacing: 1px;
-  transition: 0.3s;
-} */
-
-/* .form-input input:focus + label,
-.form-input input:not(:placeholder-shown) + label {
-  top: 0;
-  font-size: 0.8rem;
-  color: indigo;
-  background: #fff;
-  padding: 7px;
-} */
-
-/* .form-input input:focus {
-  border: 2px solid indigo;
-} */
